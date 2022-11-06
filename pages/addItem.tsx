@@ -36,7 +36,6 @@ function addItem({}: Props) {
       const receipt = tx.receipt;
       const tokenId = tx.id;
       const nft = await tx.data();
-      console.log(receipt, tokenId, nft);
       route.push("/");
     } catch (error) {
       console.error(error);
